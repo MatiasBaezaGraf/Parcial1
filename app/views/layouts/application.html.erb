@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>ParcialRoR</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class = "header">
+  <p class = "footer_p">
+    CONQUISTADORES 2020
+    <%=link_to "MEMBERS", members_url, class: "secondary-btns" %>
+    <%=link_to "CLUBS", clubs_url, class: "secondary-btns" %>
+    <%=link_to "CATEGORIES", categories_url, class: "secondary-btns" %>
+    <%=link_to "HONORS", honors_url, class: "secondary-btns" %>
+    <%=link_to "UNITS", units_url, class: "secondary-btns" %>
+  </p>
+  </div>
+
+  </body>
+  
+    <%= yield %>
+
+    <div class = "footer">
+  <p class = "footer_p">
+    CONQUISTADORES 2020
+    <%=link_to "MEMBERS", members_url, class: "secondary-btns" %>
+    <%=link_to "CLUBS", clubs_url, class: "secondary-btns" %>
+    <%=link_to "CATEGORIES", categories_url, class: "secondary-btns" %>
+    <%=link_to "HONORS", honors_url, class: "secondary-btns" %>
+    <%=link_to "UNITS", units_url, class: "secondary-btns" %>
+  </p>
+  </div>
+
+  </body>
+</html>

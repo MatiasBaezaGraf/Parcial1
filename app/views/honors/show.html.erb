@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @honor.name %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @honor.image_url %>
+</p>
+
+<p>
+  <strong>Requirements:</strong>
+  <%= @honor.requirements %>
+</p>
+
+<%= link_to 'Edit', edit_honor_path(@honor) %> |
+<%= link_to 'Back', honors_path %>
